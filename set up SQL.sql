@@ -1732,20 +1732,15 @@ INSERT INTO dbo.[CustomerAddress] ( [CustomerID], [AddressID], [AddressType]) VA
 
 create table dbo.[Output01] (		[CustomerID] smallint NOT NULL,	[NameStyle] bit NOT NULL,	[Title] varchar(4) NULL,	[FirstName] varchar(24) NOT NULL,	[LastName] varchar(22) NOT NULL,	[CompanyName] varchar(41) NOT NULL,	[SalesPerson] varchar(24) NOT NULL,	[EmailAddress] varchar(43) NOT NULL,	[Phone] varchar(19) NOT NULL)
 
--- Exercises up to OLE DB Destination. Use Address table
 
 create table [dbo].[Result01] (		[AddressID] smallint NOT NULL,	[AddressLine1] varchar(39) NOT NULL,	[AddressLine2] varchar(22) NULL,	[City] varchar(17) NOT NULL,	[StateProvince] varchar(16) NOT NULL,	[CountryRegion] varchar(14) NOT NULL,	[PostalCode] varchar(10) NOT NULL)
 
--- Altering the destination files and Derived Column task
 
 create table dbo.[Output02] (		[CustomerID] char(5) NOT NULL,	[Title] varchar(4) NULL,	[FirstName] varchar(24) NOT NULL,	[LastName] varchar(22) NOT NULL,	[CompanyName] varchar(41) NOT NULL,	[SalesPerson] varchar(24) NOT NULL,	[EmailAddress] varchar(43) NOT NULL,	[Phone] varchar(19) NOT NULL)
 
--- Exercise - Altering the destination files and Derived Column task
 
 create table [dbo].[Result02] (		[AddressID] char(5) NOT NULL,	[AddressLine1] varchar(39) NOT NULL,	[AddressLine2] varchar(22) NULL,	[City] varchar(17) NOT NULL,	[StateProvince] varchar(16) NOT NULL,	[CountryRegion] varchar(14) NOT NULL,	[PostalCode] varchar(10) NOT NULL)
 
--- Aggregate. Use Customer table as the input.
 
 create table [dbo].[Output03] (		[SalesPerson] varchar(24) NOT NULL,	[SalesPersonCount] smallint NOT NULL)
 
--- Exercise - Aggregate. Use Address table as the input
